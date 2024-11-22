@@ -1,0 +1,85 @@
+.testimonials {
+   margin-bottom: clamp(60px, 12.5vw, 200px);
+
+   &__container {
+      display: flex;
+      flex-direction: column;
+      row-gap: clamp(40px, 5vw, 112px);
+   }
+
+   &__body {
+      font-family: 'Inter', sans-serif;
+      font-weight: 400;
+
+      &:first-child {
+         justify-items: center;
+      }
+   }
+
+   &__badge {
+      margin-bottom: 22px;
+   }
+
+   &__title {
+      margin-bottom: 25px;
+   }
+
+   &__text {
+   }
+
+   &__cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px 32px;
+      justify-content: center;
+      align-items: start;
+   }
+
+   &__card {
+      flex: 1 1 30%;
+      min-width: 300px;
+      padding: 32px;
+      background-color: var(--background-color-grey);
+      border-radius: 16px;
+
+      & .testimonials__text {
+         margin-bottom: 20px;
+         color: var(--color-text-grey);
+         font-size: 18px;
+
+         @include lineHeight(27, 18);
+      }
+   }
+
+   &__stars {
+      margin-bottom: 36px;
+   }
+
+   &__author {
+      display: flex;
+   }
+
+   &__image-author {
+      margin-right: 16px;
+   }
+
+   &__info-author {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+   }
+
+   &__name-author {
+      font-size: 16px;
+      color: var(--color-text-blue);
+      
+      @include lineHeight(24, 16);
+   }
+   
+   &__job-author {
+      color: var(--color-text-grey);
+      font-size: 16px;
+      
+      @include lineHeight(24, 16);
+   }
+}

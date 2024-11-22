@@ -1,0 +1,84 @@
+.collection {
+   &__container {
+      flex-direction: column;
+      row-gap: clamp(64px, 10vw, 160px);
+      text-align: left;
+      margin-bottom: clamp(60px, 10vw, 160px);
+
+      @include table {
+         align-items: center;
+         text-align: center;
+      }
+   }
+
+   &__body {
+      display: flex;
+      align-items: center;
+      column-gap: clamp(25px, 7.5vw, 125px);
+   }
+
+   &__image {
+      @include table {
+         display: none;
+      }
+   }
+
+   &__content {
+      max-width: 575px;
+   }
+
+   &__badge {
+      margin-bottom: 14px;
+   }
+
+   &__title {
+      text-align: inherit;
+      margin-bottom: 28px;
+   }
+
+   &__text {
+      text-align: inherit;
+      margin-bottom: 37px;
+   }
+
+   &__link-wrapper {
+      display: flex;
+      gap: 16px;
+
+      @include table {
+         justify-content: center;
+      }
+   }
+
+   &__link {
+      padding: 17px 34px;
+
+      &:last-child {
+         padding: 0px 28px 0px 0px;
+         border: none;
+         position: relative;
+
+         &::after,
+         &::before {
+            content: '';
+            position: absolute;
+            width: 9px;
+            height: 2px;
+            translate: 0 -50%;
+            background-color: #000;
+         }
+
+         &::before {
+            rotate: 45deg;
+            right: 10px;
+            top: calc(50% - 2px);
+         }
+         
+         &::after {
+            right: 10px;
+            rotate: -45deg;
+            top: calc(50% + 3px);
+         }
+      }
+   }
+}

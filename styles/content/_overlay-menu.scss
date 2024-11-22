@@ -1,0 +1,47 @@
+.overlay {
+   border-radius: 25px;
+
+   &__menu {
+      padding: 50px 10vw;
+   }
+
+   &__button-close {
+      width: 42px;
+      height: 42px;
+      position: absolute;
+      cursor: pointer;
+      top: 20px;
+      right: 20px;
+
+      &::after,
+      &::before {
+         content: '';
+         position: absolute;
+         width: 42px;
+         height: 3px;
+         background-color: var(--background-color-violet);
+         left: 0;
+      }
+
+      &::after {
+         rotate: 45deg;
+      }
+      &::before {
+         rotate: -45deg;
+      }
+   }
+
+   &__menu-list {
+      display: flex;
+      flex-direction: column;
+      row-gap: 40px;
+      text-align: center;
+   }
+
+   &__menu-link {
+      font-family: 'Inter', sans-serif;
+      font-size: 40px;
+      line-height: 1;
+      font-weight: 400;
+   }
+}

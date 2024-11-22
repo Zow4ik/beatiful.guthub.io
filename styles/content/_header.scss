@@ -1,0 +1,172 @@
+.header {
+   font-family: 'Inter';
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   color: var(--color-text-grey);
+   background-color: var(--background-color-while);
+
+   &__container {
+      display: flex;
+      justify-content: right;
+      padding-block: 15px;
+      align-items: center;
+
+      @media (max-width: 850px) {
+         column-gap: 15px;
+      }
+   }
+
+   &__menu {
+      margin-inline: auto 15%;
+
+      @include table {
+         margin-inline: auto;
+      }
+
+      @media (max-width: 850px) {
+         display: none;
+      }
+
+      &-list {
+         display: flex;
+         column-gap: 27px;
+         align-items: center;
+
+         @include table {
+            column-gap: 15px;
+         }
+      }
+
+      &-item {
+      }
+
+      &-link {
+         padding: 5px;
+      }
+   }
+
+   &__submenu {
+      &:hover &-list {
+         display: flex;
+      }
+
+      &-button {
+         color: inherit;
+         cursor: pointer;
+         position: relative;
+         padding: 5px 20px 5px 5px;
+
+         &::after,
+         &::before {
+            content: '';
+            position: absolute;
+            right: 5px;
+            top: 50%;
+            translate: 0 -50%;
+            width: 8px;
+            height: 2px;
+            background-color: var(--color-text-grey);
+         }
+
+         &::before {
+            rotate: 45deg;
+         }
+         &::after {
+            rotate: -45deg;
+            right: 0.5px;
+         }
+      }
+   
+      &-list {
+         max-width: 200px;
+         position: absolute;
+         padding: 5px;
+         display: none;
+         flex-direction: column;
+         row-gap: 5px;
+         background-color: var(--background-color-lilac);
+         border-radius: 10px;
+      }
+   
+      &-item {
+      }
+   
+      &-link {
+      }
+   }
+
+   &__burger-menu {
+      width: 40px;
+      height: 40px;
+      position: relative;
+      background-color: var(--button-pink);
+      border-radius: 4px;
+      cursor: pointer;
+      margin-right: auto;
+      display: none;
+
+      @media (max-width: 850px) {
+         display: block;
+      }
+
+      &::after {
+         border-radius: 10px;
+         content: '';
+         position: absolute;
+         width: 30px;
+         height: 3px;
+         background-color: var(--background-color-while);
+         box-shadow: 0px 10px var(--background-color-while), 0px -10px var(--background-color-while);
+         top: 50%;
+         translate: -50% -50%;
+         left: 50%;
+      }
+   }
+
+   &__body {
+      display: flex;
+      gap: 8px;
+   }
+
+   &__basket {
+      padding: 9px 21px 9px 40px;
+      position: relative;
+
+      @include table {
+         padding: 6px 14px 6px 30px;
+      }
+
+      @media (max-width: 850px) {
+         padding: 12px 18px 12px 30px;
+      }
+
+      &::before {
+         content: '';
+         position: absolute;
+         left: 17px;
+         top: calc(50% - 2px);
+         translate: 0 -50%;
+         width: 20px;
+         height: 30px;
+         background: url('../images/svg/cart-button-.svg') no-repeat center;
+
+         @include table {
+            left: 10px;
+         }
+      }
+   }
+
+   &__button-subscribe {
+      padding: 9px 21px;
+      cursor: pointer;
+
+      @include table {
+         padding: 6px 14px 6px 14px;
+      }
+
+      @media (max-width: 850px) {
+         padding: 12px 30px;
+      }
+   }
+}

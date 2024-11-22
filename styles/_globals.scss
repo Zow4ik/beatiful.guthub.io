@@ -1,0 +1,78 @@
+body {
+   font-weight: 400;
+   background-color: var(--color-text-while);
+}
+
+.container {
+   max-width: calc(var(--container) + var(--container-padding) * 2);
+   display: flex;
+   padding-inline: var(--container-padding);
+   margin-inline: auto;
+}
+
+.visually-hidden {
+   position: absolute !important;
+   width: 1px !important;
+   height: 1px !important;
+   margin: -1px !important;
+   border: 0 !important;
+   padding: 0 !important;
+   white-space: nowrap !important;
+   clip-path: inset(100%) !important;
+   clip: rect(0 0 0 0) !important;
+   overflow: hidden !important;
+}
+
+.button,
+.button-pink {
+   font-family: 'Inter', sans-serif;
+   text-align: center;
+   align-items: center;
+   display: flex;
+   font-size: 16px;
+   border-radius: 64px;
+   cursor: pointer;
+   
+   @include lineHeight(24, 16);
+}
+
+.button {
+   border: var(--border-button);
+   color: var(--color-text-blue);
+}
+.button-pink {
+   background-color: var(--button-pink);
+   color: var(--color-text-while);
+}
+
+.badge {
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+   line-height: 1.5;
+   padding: 4px 12px;
+   background-color: var(--background-color-lilac);
+   color: var(--color-text-violet);
+   border-radius: 24px;
+   display: inline-block;
+}
+
+.title-badge {
+   font-family: 'Roboto', sans-serif;
+   font-weight: 400;
+   font-size: 48px;
+   text-align: center;
+   color: var(--color-text-blue);
+   max-width: 750px;
+
+   @include lineHeight(57.6, 48);
+}
+
+.text-badge {
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+   font-size: 18px;
+   line-height: 1.5;
+   text-align: center;
+   color: var(--color-text-grey);
+}

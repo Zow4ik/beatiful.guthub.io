@@ -1,0 +1,123 @@
+.faq {
+   background-color: var(--background-color-grey);
+   margin-bottom: clamp(60px, 7.5vw, 128px);
+
+   &__container {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 80px;
+      padding-block: clamp(40px, 7.5vw, 120px) clamp(40px, 7.5vw, 160px);
+
+      @include desktop {
+         flex-direction: column;
+         row-gap: 40px;
+         text-align: center;
+      }
+   }
+
+   &__body {
+      font-weight: 400;
+      
+      &:first-child {
+         max-width: 515px;
+      }
+
+      &:last-child {
+         flex: 1 1 auto;
+         display: flex;
+         flex-direction: column;
+         row-gap: 16px;
+      }
+   }
+
+   &__title {
+      margin-bottom: 27px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 48px;
+      color: var(--color-text-blue);
+
+      @include lineHeight(57.6, 48);
+   }
+
+   &__text {
+      font-family: 'Inter', sans-serif;
+      font-size: 18px;
+      color: var(--color-text-grey);
+      margin-bottom: 37px;
+      
+      @include lineHeight(27, 16);
+   }
+
+   &__button {
+      padding: 17px 33px;
+
+      @include desktop {
+         margin: 0 auto;
+      }
+   }
+
+   &__accordion[open] {
+      &::before {
+         rotate: 45deg;
+      }
+
+      &::after {
+         rotate: -45deg;
+      }
+   }
+
+   &__accordion {
+      background-color: var(--background-color-while);
+      border: 1px solid rgba(227, 232, 239, 1);
+      border-radius: 8px;
+      padding: 23px 70px 23px 23px;
+      position: relative;
+
+      &::before,
+      &::after {
+         transition: var(--transition);
+         content: '';
+         position: absolute;
+         right: 23px;
+         top: 50%;
+         translate: 0 -50%;
+         width: 20px;
+         height: 2px;
+         background-color: var(--color-text-blue);
+         pointer-events: none;
+      }
+
+      &::before {}
+      &::after {
+         rotate: 90deg;
+      }
+
+      &-title {
+         font-family: 'Inter', sans-serif;
+         font-size: 18px;
+         color: var(--color-text-blue);
+
+         @include lineHeight(27, 18);
+
+         &::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+         }
+
+         &::marker {
+            display: none;
+            content: '';
+         }
+      }
+
+      &-text {
+         margin-top: 10px;
+         font-family: 'Inter', sans-serif;
+         font-size: 18px;
+         color: var(--color-text-grey);
+
+         @include lineHeight(27, 18);
+      }
+   }
+}

@@ -1,0 +1,46 @@
+$desktop: 1280.98px;
+$desktop-above: 1281px;
+
+$table: 1023.98px;
+$table-above: 1024px;
+
+$mobile: 767.98px;
+$mobile-above: 768px;
+
+/* ============================ */
+
+@mixin desktop {
+   @media (max-width: $desktop) {
+      @content;
+   }
+}
+
+@mixin desktop-above {
+   @media (min-width: $desktop-above) {
+      @content;
+   }
+}
+
+@mixin table {
+   @media (max-width: $table) {
+      @content;
+   }
+}
+
+@mixin table-above {
+   @media (min-width: $table-above) {
+      @content;
+   }
+}
+
+@mixin mobile {
+   @media (max-width: $mobile) {
+      @content;
+   }
+}
+
+@mixin mobile-above {
+   @media (min-width: $mobile-above) {
+      @content;
+   }
+}

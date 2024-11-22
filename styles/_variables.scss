@@ -1,0 +1,23 @@
+:root {
+   --background-color-violet: rgba(98, 68, 163, 1);
+   --background-color-while: rgba(255, 255, 255, 1);
+   --background-color-lilac: rgba(237, 235, 247, 1);
+   --background-color-grey: rgba(243, 245, 247, 1);
+
+   --color-text-while: rgba(255, 255, 255, 1);
+   --color-text-grey: rgba(105, 117, 134, 1);
+   --color-text-dark-grey: rgba(75, 85, 99, 1);
+   --color-text-blue: rgba(32, 41, 57, 1);
+   --color-text-dark-blue: rgba(18, 25, 38, 1);
+   --color-text-violet: rgba(60, 39, 105, 1);
+
+   --border-button: 1px solid rgba(205, 213, 223, 1);
+   --border-accordion: 1px solid rgba(227, 232, 239, 1);
+   
+   --button-pink: rgba(207, 77, 116, 1);
+
+   --container: 1280px;
+   --container-padding: 15px;
+
+   --transition: all 0.4s ease 0s;
+}

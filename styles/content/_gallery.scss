@@ -1,0 +1,49 @@
+.gallery {
+   &__container {
+   }
+
+   &__carousel {
+      display: flex;
+      gap: 16px;
+      overflow-x: hidden;
+
+      &-wrapper {
+         display: flex;
+         gap: 16px;
+      }
+   }
+
+   .carousel--1 {
+      animation: 15s linear infinite carousel-1;
+
+      @keyframes carousel-1 {
+         0% {
+            translate: 0%;
+         }
+         100% {
+            translate: calc(-100% - 16px);
+         }
+      }
+   }
+   .carousel--2 {
+      animation: 15s linear infinite carousel-2;
+
+      @keyframes carousel-2 {
+         0% {
+            translate: 0%;
+         }
+         100% {
+            translate: calc(-100% - 16px);
+         }
+      }
+   }
+
+   &__item {
+      width: 275px;
+      height: 275px;
+
+      img {
+         max-width: none;
+      }
+   }
+}

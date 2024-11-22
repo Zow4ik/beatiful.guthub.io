@@ -1,0 +1,143 @@
+.footer {
+   &__container {
+      flex-direction: column;
+      padding-block: clamp(50px, 5vw, 80px) clamp(30px, 5vw, 80px);
+      background-color: var(--background-color-while);
+   }
+
+   &__body {
+      display: flex;
+      justify-content: space-between;
+      font-weight: 400;
+      font-family: 'Inter';
+      gap: 40px;
+      align-items: center;
+
+      &:first-child {
+         margin-bottom: clamp(30px, 5vw, 80px);
+
+         @include table {
+            flex-wrap: wrap;
+            justify-content: center;
+         }
+      }
+
+      &:last-child {
+         padding-top: clamp(30px, 5vw, 80px);
+         position: relative;
+
+         &::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(227, 232, 239, 1);
+         }
+      }
+   }
+
+   &__form {
+      max-width: 480px;
+
+      &-text {
+         color: var(--color-text-grey);
+         display: inline-block;
+
+         &:first-child {
+            margin-bottom: 22px;
+            font-size: 16px;
+            line-height: 1.5;
+         }
+         &:last-child {
+            font-size: 12px;
+            line-height: 1.5;
+         }
+      }
+
+      &-container {
+         display: flex;
+         gap: 16px;
+         margin-bottom: 19px;
+         flex-wrap: wrap;
+      }
+
+      &-item {
+         height: 56px;
+         padding-inline: 12px;
+         background-color: var(--background-color-while);
+         border: 1px solid rgba(205, 213, 223, 1);
+         border-radius: 8px;
+         color: rgb(123, 125, 127);
+         box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.06);
+         flex: 1 0 60%;
+      }
+
+      &-button {
+         font-size: 16px;
+         line-height: 1.5;
+         padding: 17px 33px;
+         background-color: var(--button-pink);
+         border-radius: 64px;
+         color: var(--color-text-while);
+         flex: 1 0 30%;
+      }
+   }
+
+   &__menu {
+      justify-content: center;
+      display: flex;
+      gap: 40px;
+      
+      @include table {
+         flex-wrap: wrap;
+      }
+   }
+
+   &__list {
+      width: 139px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 8px;
+
+      @include table {
+         text-align: center;
+      }
+
+      &-item {
+      }
+   
+      &-title {
+         font-size: 16px;
+         line-height: 1.5;
+         color: var(--color-text-dark-blue);
+         margin-bottom: 8px;
+         display: inline-block;
+      }
+
+      &-link {
+         font-size: 13px;
+         color: var(--color-text-grey);
+         
+         @include lineHeight(21, 13);
+      }
+   }
+
+   &__copyright {
+      font-family: 'Inter';
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--color-text-grey);
+   }
+
+   &__socials {
+      display: flex;
+      column-gap: 12px;
+   }
+
+   &__social {
+      width: 24px;
+      aspect-ratio: 1;
+   }
+}

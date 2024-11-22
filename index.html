@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta name="description" content="описание страницы">
+   <title>Beautiful</title>
+   <link rel="stylesheet" href="styles/styles.css">
+   <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+   />
+</head>
+<body>
+   <div class="banner visually-hidden">
+      <div class="banner__container container">
+         <p class="banner__text">
+            Free worldwide shipping for orders over $55.
+            <a href="#">Shop now</a>
+         </p>
+         <button class="banner__button-close">
+            <span class="visually-hidden">close a banner with a discount</span>
+         </button>
+      </div>
+   </div>
+   <header class="header">
+      <div class="header__container container">
+         <nav class="header__menu">
+            <ul class="header__menu-list">
+               <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Products</a>
+               </li>
+               <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Story</a>
+               </li>
+               <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Blog</a>
+               </li>
+               <li class="header__menu-item">
+                  <div class="header__submenu">
+                     <button type="button" class="header__submenu-button">Collections</button>
+                     <ul class="header__submenu-list">
+                        <li class="header__submenu-item">
+                           <a href="#" class="header__submenu-link">Collections</a>
+                        </li>
+                        <li class="header__submenu-item">
+                           <a href="#" class="header__submenu-link">Collections</a>
+                        </li>
+                        <li class="header__submenu-item">
+                           <a href="#" class="header__submenu-link">Collections</a>
+                        </li>
+                        <li class="header__submenu-item">
+                           <a href="#" class="header__submenu-link">Collections</a>
+                        </li>
+                     </ul>
+                  </div>
+               </li>
+               <li class="header__menu-item">
+                  <a class="header__menu-link" href="#">Contact</a>
+               </li>
+            </ul>
+         </nav>
+         <button class="header__burger-menu">
+            <span class="visually-hidden">open navigation menu</span>
+         </button>
+         <div class="header__body">
+            <a href="#" class="header__basket button">Cart</a>
+            <button class="header__button-subscribe button-pink">Subscribe</button>
+         </div>
+      </div>
+   </header>
+   <main class="main">
+      <section class="welcome">
+         <div class="welcome__container container">
+            <div class="welcome__body">
+               <div class="welcome__content">
+                  <h1 class="welcome__title">Hydrated skin in 3 easy steps</h1>
+                  <p class="welcome__text">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing
+                     elit. Suspendisse varius enim in eros elementum
+                     tristique duis Cursus mi quis viverra ornare.
+                  </p>
+                  <div class="welcome__link-wrapper">
+                     <a href="#" class="welcome__link button-pink">Shop now</a>
+                     <a href="#" class="welcome__link button">Our story</a>
+                  </div>
+                  <span class="welcome__company-text">
+                     Trusted by the world's best companies
+                  </span>
+                  <div class="welcome__logos">
+                     <img src="images/svg/logoipsum-1.svg" alt="logoipsum" class="welcome__logo">
+                     <img src="images/svg/logoipsum-2.svg" alt="logoipsum" class="welcome__logo">
+                     <img src="images/svg/logoipsum-3.svg" alt="logoipsum" class="welcome__logo">
+                  </div>
+               </div>
+            </div>
+            <div class="welcome__image">
+               <img src="images/webp/welcome-image.webp" alt="man">
+            </div>
+         </div>
+      </section>
+      <section class="steps">
+         <div class="steps__container container">
+            <div class="steps__slider swiper">
+               <div class="steps__slider-wrapper swiper-wrapper">
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Healthy supplement</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Gluten-free</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Natural products</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Free shipping</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Eco-friendly</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Vitamins</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Healthy supplement</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Gluten-free</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Natural products</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Free shipping</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Eco-friendly</span>
+                  </div>
+                  <div class="steps__slide swiper-slide">
+                     <span class="steps__header">Vitamins</span>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="about">
+         <div class="about__container container">
+            <span class="about__badge badge">About us</span>
+            <h2 class="about__title title-badge">The beautiful story</h2>
+            <p class="about__text text-badge">
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim
+               in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
+               interdum nulla, ut commodo diam libero vitae erat.
+            </p>
+            <div class="about__link-wrapper">
+               <a href="#" class="about__link button">Our story</a>
+               <a href="#" class="about__link button">Contact us</a>
+            </div>
+         </div>
+      </section>
+      <section class="sellers">
+         <div class="sellers__container container">
+            <span class="sellers__badge badge">Best sellers</span>
+            <h2 class="sellers__title title-badge">The most trusted products by our customers</h2>
+            <ul class="sellers__cards">
+               <li class="sellers__card">
+                  <article class="sellers__card-body">
+                     <img src="images/webp/sellers-clean.webp" alt="Clean" class="sellers__card-image">
+                     <div class="sellers__card-info">
+                        <h3 class="sellers__card-title">Clean</h3>
+                        <span class="sellers__card-price">$ 32.00 USD</span>
+                     </div>
+                     <p class="sellers__card-text">Lorem ipsum dolor sit amet</p>
+                     <div class="sellers__card-details">
+                        <button class="sellers__card-button button">Product details</button>
+                        <div>
+                           <p>
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores delectus 
+                              voluptatem consequuntur recusandae minus quos, officia eligendi molestiae 
+                              reprehenderit distinctio.
+                           </p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sapiente?</p>
+                        </div>
+                     </div>
+                  </article>
+               </li>
+               <li class="sellers__card">
+                  <article class="sellers__card-body">
+                     <img src="images/webp/tone-min.webp" alt="Tone" class="sellers__card-image">
+                     <div class="sellers__card-info">
+                        <h3 class="sellers__card-title">Tone</h3>
+                        <span class="sellers__card-price">$ 17.00 USD</span>
+                     </div>
+                     <p class="sellers__card-text">Lorem ipsum dolor sit amet</p>
+                     <div class="sellers__card-details">
+                        <button class="sellers__card-button button">Product details</button>
+                        <div>
+                           <p>
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores delectus 
+                              voluptatem consequuntur recusandae minus quos, officia eligendi molestiae 
+                              reprehenderit distinctio.
+                           </p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sapiente?</p>
+                        </div>
+                     </div>
+                  </article>
+               </li>
+               <li class="sellers__card">
+                  <article class="sellers__card-body">
+                     <img src="images/webp/soft-min.webp" alt="Soft" class="sellers__card-image">
+                     <div class="sellers__card-info">
+                        <h3 class="sellers__card-title">Soft</h3>
+                        <span class="sellers__card-price">$ 54.00 USD</span>
+                     </div>
+                     <p class="sellers__card-text">Lorem ipsum dolor sit amet</p>
+                     <div class="sellers__card-details">
+                        <button class="sellers__card-button button">Product details</button>
+                        <div>
+                           <p>
+                              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores delectus 
+                              voluptatem consequuntur recusandae minus quos, officia eligendi molestiae 
+                              reprehenderit distinctio.
+                           </p>
+                           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, sapiente?</p>
+                        </div>
+                     </div>
+                  </article>
+               </li>
+               <li class="sellers__card sellers__card--news">
+                  <div class="sellers__card-shop">
+                     <div>
+                        <h3 class="sellers__shop-title">Best selling creams</h3>
+                        <p class="sellers__shop-text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Suspendisse varius enim in eros elementum tristique.
+                        </p>
+                        <a class="sellers__shop-link button">Shop now</a>
+                     </div>
+                     <img src="images/webp/shop1-min.webp" alt="" class="sellers__shop-image">
+                  </div>
+                  <div class="sellers__card-shop">
+                     <div>
+                        <h3 class="sellers__shop-title">Best selling lotions</h3>
+                        <p class="sellers__shop-text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                           Suspendisse varius enim in eros elementum tristique.
+                        </p>
+                        <a class="sellers__shop-link button">Shop now</a>
+                     </div>
+                     <img src="images/webp/shop2-min.webp" alt="" class="sellers__shop-image">
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <section class="works">
+         <div class="works__container container">
+            <div class="works__body">
+               <span class="works__badge badge">How it works</span>
+               <h2 class="works__title title-badge">It’s easy as 1, 2, 3</h2>
+               <p class="works__text text-badge">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  suspendisse varius enim in eros. Elementum tristique duis
+                  cursus, mi quis viverra ornare eros dolor.
+               </p>
+            </div>
+            <div class="works__body">
+               <ul class="works__list">
+                  <li class="works__item">
+                     <img src="images/svg/works-1.svg" alt="#" class="works__item-icon">
+                     <h3 class="works__item-title">Apply the product</h3>
+                     <p class="works__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum tristique.
+                     </p>
+                  </li>
+                  <li class="works__item">
+                     <img src="images/svg/works-2.svg" alt="#" class="works__item-icon">
+                     <h3 class="works__item-title">Wait for the skin to absorb</h3>
+                     <p class="works__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Suspendisse varius enim in eros elementum tristique.
+                     </p>
+                  </li>
+                  <li class="works__item">
+                     <img src="images/svg/works-3.svg" alt="#" class="works__item-icon">
+                     <h3 class="works__item-title">And that’s it</h3>
+                     <p class="works__item-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Suspendisse varius enim in eros elementum tristique.
+                     </p>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </section>
+      <section class="collection">
+         <div class="collection__container container">
+            <div class="collection__body">
+               <div class="collection__image">
+                  <img src="images/webp/collection-1-min.webp" alt="#">
+               </div>
+               <div class="collection__content">
+                  <span class="collection__badge badge">Smooth skin collection</span>
+                  <h2 class="collection__title title-badge">For oily face skin</h2>
+                  <p class="collection__text text-badge">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse
+                     Varius enim in eros elementum tristique, duis cursus mi quis viverra
+                     ornare, eros dolor interdum nulla ut commodo.
+                  </p>
+                  <div class="collection__link-wrapper">
+                     <a href="#" class="collection__link button">Shop now</a>
+                     <a href="#" class="collection__link button">Explore more</a>
+                  </div>
+               </div>
+            </div>
+            <div class="collection__body">
+               <div class="collection__content">
+                  <span class="collection__badge badge">Healthy tanning collection</span>
+                  <h2 class="collection__title title-badge">For body skin</h2>
+                  <p class="collection__text text-badge">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse
+                     Varius enim in eros elementum tristique, duis cursus mi quis viverra
+                     ornare, eros dolor interdum nulla ut commodo.
+                  </p>
+                  <div class="collection__link-wrapper">
+                     <a href="#" class="collection__link button">Shop now</a>
+                     <a href="#" class="collection__link button">Explore more</a>
+                  </div>
+               </div>
+               <div class="collection__image">
+                  <img src="images/webp/collection-2-min.webp" alt="#">
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="testimonials">
+         <div class="testimonials__container container">
+            <div class="testimonials__body">
+               <span class="testimonials__badge badge">Testimonials</span>
+               <h2 class="testimonials__title title-badge">What our customers say</h2>
+               <p class="testimonials__text text-badge">What our customers say</p>
+            </div>
+            <div class="testimonials__body">
+               <div class="testimonials__cards">
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Nulla facilisi. Sed sit amet commodo quam, ac viverra
+                        turpis. Maecenas vitae pulvinar lacus. Suspendisse
+                        cursus turpis vel ante laoreet vehicula."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-1.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Orlando Diggs</span>
+                           <span class="testimonials__job-author">Photographer</span>
+                        </div>
+                     </address>
+                  </div>
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Sed mattis scelerisque metus. Mauris ultricies,
+                        dui id finibus pretium, neque sapien vestibulum
+                        lectus, id tincidunt risus nulla at magna. Nulla
+                        rhoncus dolor at est vehicula, vel gravida risus
+                        vulputate libero."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-2.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Mollie Hall</span>
+                           <span class="testimonials__job-author">Biologist</span>
+                        </div>
+                     </address>
+                  </div>
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Duis sit amet mi et mauris sollicitudin semper.
+                        Donec quam justo, accumsan condimentum sollicitudin
+                        sed, posuere ac lacus etiam saggitis sed nisi."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-3.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Lori Bryson</span>
+                           <span class="testimonials__job-author">Blogger</span>
+                        </div>
+                     </address>
+                  </div>
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Maecenas tellus mauris, sagittis a dui sed, porta
+                        convallis est. Morbi sapien massa, semper non tincidunt
+                        sed, lobortis vel nisl. Curabitur fermentum eget justo
+                        nec efficitur."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-4.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Kate Morrison</span>
+                           <span class="testimonials__job-author">Makeup Artist</span>
+                        </div>
+                     </address>
+                  </div>
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Phasellus laoreet posuere est quis euismod. In
+                        facilisis sem non tincidunt feugiat. Mauris vitae
+                        elit eget quam sollicitudin gravida. Praesent
+                        imperdiet viverra justo nec ullamcorper. In dictum
+                        felis at mauris fringilla pulvinar."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-5.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Koray Okumus</span>
+                           <span class="testimonials__job-author">Writter</span>
+                        </div>
+                     </address>
+                  </div>
+                  <div class="testimonials__card">
+                     <img 
+                        src="images/svg/stars.svg"
+                        alt="5 stars"
+                        class="testimonials__stars"
+                        width="116"
+                        height="19"
+                     />
+                     <p class="testimonials__text">
+                        "Etiam sagittis nec tortor in scelerisque. Sed
+                        et bibendum nisi, sit amet varius libero. Maecenas
+                        posuere convallis tellus, at hendrerit sem."
+                     </p>
+                     <address class="testimonials__author">
+                        <img src="images/webp/testimonials-6.webp" alt="" class="testimonials__image-author">
+                        <div class="testimonials__info-author">
+                           <span class="testimonials__name-author">Noah Pierre</span>
+                           <span class="testimonials__job-author">Dermatologist</span>
+                        </div>
+                     </address>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="faq">
+         <div class="faq__container container">
+            <div class="faq__body">
+               <h2 class="faq__title">Frequently asked questions</h2>
+               <p class="faq__text">
+                  Frequently asked questions ordered by popularity.
+                  Remember that if the visitor has not committed to
+                  the call to action, they may still have questions
+                  (doubts) that can be answered.
+               </p>
+               <button class="faq__button button-pink">Contact us</button>
+            </div>
+            <div class="faq__body">
+               <details class="faq__accordion">
+                  <summary class="faq__accordion-title">
+                     Are the fragrances in your products natural and safe?
+                  </summary>
+                  <p class="faq__accordion-text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus, quaerat natus? Illum fuga ea, ab corporis
+                     deleniti facere aperiam velit?
+                  </p>
+               </details>
+               <details class="faq__accordion">
+                  <summary class="faq__accordion-title">
+                     Are Beautico products vegan?
+                  </summary>
+                  <p class="faq__accordion-text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus, quaerat natus? Illum fuga ea, ab corporis
+                     deleniti facere aperiam velit?
+                  </p>
+               </details>
+               <details class="faq__accordion">
+                  <summary class="faq__accordion-title">
+                     What are the expiry dates for Beautico products?
+                  </summary>
+                  <p class="faq__accordion-text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus, quaerat natus? Illum fuga ea, ab corporis
+                     deleniti facere aperiam velit?
+                  </p>
+               </details>
+               <details class="faq__accordion">
+                  <summary class="faq__accordion-title">
+                     Is your packaging environmentally friendly?
+                  </summary>
+                  <p class="faq__accordion-text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus, quaerat natus? Illum fuga ea, ab corporis
+                     deleniti facere aperiam velit?
+                  </p>
+               </details>
+               <details class="faq__accordion">
+                  <summary class="faq__accordion-title">
+                     Does Beautico products give me an allergic reaction?
+                  </summary>
+                  <p class="faq__accordion-text">
+                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                     Necessitatibus, quaerat natus? Illum fuga ea, ab corporis
+                     deleniti facere aperiam velit?
+                  </p>
+               </details>
+            </div>
+         </div>
+      </section>
+      <section class="posts">
+         <div class="posts__container container">
+            <div class="posts__body">
+               <div class="posts__title-wrapper">
+                  <span class="posts__badge badge">Latest posts</span>
+                  <h2 class="posts__title title-badge">From our blog</h2>
+                  <p class="posts__text text-badge">
+                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  </p>
+               </div>
+               <a href="#" class="posts__link-all-post button">View all posts</a>
+            </div>
+            <div class="posts__body">
+               <div class="posts__articles">
+                  <article class="posts__article">
+                     <span class="posts__article-badge badge">Anti aging</span>
+                     <img src="images/webp/posts-1.webp" alt="" class="posts__article-image">
+                     <div class="posts__article-content">
+                        <h3 class="posts__article-title">
+                           Dry acne prone skincare routine
+                        </h3>
+                        <p class="posts__article-text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Suspendisse varius enim in eros.
+                        </p>
+                        <a href="#" class="posts__article-link">Read more</a>
+                     </div>
+                  </article>
+                  <article class="posts__article">
+                     <span class="posts__article-badge badge">Skin types</span>
+                     <img src="images/webp/posts-2.webp" alt="" class="posts__article-image">
+                     <div class="posts__article-content">
+                        <h3 class="posts__article-title">
+                           5 ingredients to calm down stressed out skin
+                        </h3>
+                        <p class="posts__article-text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Suspendisse varius enim in eros.
+                        </p>
+                        <a href="#" class="posts__article-link">Read more</a>
+                     </div>
+                  </article>
+                  <article class="posts__article">
+                     <span class="posts__article-badge badge">Organic skincare</span>
+                     <img src="images/webp/posts-3.webp" alt="" class="posts__article-image">
+                     <div class="posts__article-content">
+                        <h3 class="posts__article-title">
+                           How to use products for sensitive skin
+                        </h3>
+                        <p class="posts__article-text">
+                           Lorem ipsum dolor sit amet, consectetur adipiscing
+                           elit. Suspendisse varius enim in eros.
+                        </p>
+                        <a href="#" class="posts__article-link">Read more</a>
+                     </div>
+                  </article>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="gallery">
+         <div class="gallery__container container">
+            <div class="gallery__carousel">
+               <div class="gallery__carousel-wrapper carousel--1">
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-2-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-2-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-3-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-4-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-5-min.webp" alt="">
+                  </div>
+               </div>
+               <div class="gallery__carousel-wrapper carousel--2">
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-2-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-2-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-3-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-4-min.webp" alt="">
+                  </div>
+                  <div class="gallery__item">
+                     <img src="images/webp/gallery-5-min.webp" alt="">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer__container container">
+         <div class="footer__body">
+            <form class="footer__form">
+               <span class="footer__form-text">
+                  Join our newsletter to stay up to date on features and releases.
+               </span>
+               <div class="footer__form-container">
+                  <input placeholder="wtite email" type="email" class="footer__form-item">
+                  <button class="footer__form-button">Subscribe</button>
+               </div>
+               <span class="footer__form-text">
+                  By subscribing you agree to with our
+               </span>
+            </form>
+            <div class="footer__menu">
+               <ul class="footer__list">
+                  <li class="footer__list-item">
+                     <span class="footer__list-title">Pages</span>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Home</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">About</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Contact</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Blog</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">FAQs</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Legal</a>
+                  </li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__list-item">
+                     <span class="footer__list-title">CMS Pages</span>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Blog Post</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Blog Categories</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Product Page</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Product Categories</a>
+                  </li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__list-item">
+                     <span class="footer__list-title">Account Pages</span>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Login</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Sign Up</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Forgot Password</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Reset Password</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Email Confirmation</a>
+                  </li>
+               </ul>
+               <ul class="footer__list">
+                  <li class="footer__list-item">
+                     <span class="footer__list-title">Utility Pages</span>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Style Guide</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Changelog</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Licenses</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">404</a>
+                  </li>
+                  <li class="footer__list-item">
+                     <a href="#" class="footer__list-link">Password</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+         <div class="footer__body">
+            <p class="footer__copyright">© Beautico by Minimal Square. Powered by Webflow.</p>
+            <div class="footer__socials">
+               <a href="#" class="footer__social">
+                  <img src="images/webp/facebook-icon.svg" alt="facebook">
+               </a>
+               <a href="#" class="footer__social">
+                  <img src="images/webp/instagram-icon.svg" alt="instagram">
+               </a>
+               <a href="#" class="footer__social">
+                  <img src="images/webp/twitter-icon.svg" alt="twitter">
+               </a>
+            </div>
+         </div>
+      </div>
+   </footer>
+   <dialog class="overlay">
+      <div class="overlay__menu">
+         <button class="overlay__button-close">
+            <span class="visually-hidden">close navigation menu</span>
+         </button>
+         <ul class="overlay__menu-list">
+            <li class="overlay__menu-item">
+               <a href="#" class="overlay__menu-link">Products</a>
+            </li>
+            <li class="overlay__menu-item">
+               <a href="#" class="overlay__menu-link">Story</a>
+            </li>
+            <li class="overlay__menu-item">
+               <a href="#" class="overlay__menu-link">Blog</a>
+            </li>
+            <li class="overlay__menu-item">
+               <a href="#" class="overlay__menu-link">Collections</a>
+            </li>
+            <li class="overlay__menu-item">
+               <a href="#" class="overlay__menu-link">Contact</a>
+            </li>
+         </ul>
+      </div>
+   </dialog>
+   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+   <script src="main.js" type="module"></script>
+</body>
+</html>

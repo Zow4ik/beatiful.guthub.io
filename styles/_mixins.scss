@@ -1,0 +1,17 @@
+@mixin hover {
+   @media (hover: hover) {
+      &:hover {
+         @content;
+      }
+   }
+
+   @media (hover: none) {
+      &:active {
+         @content;
+      }
+   }
+}
+
+@mixin lineHeight($height, $size) {
+   line-height: #{$height / $size};
+}

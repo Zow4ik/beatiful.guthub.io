@@ -1,0 +1,169 @@
+.sellers {
+   &__container {
+      display: block;
+      justify-items: center;
+      padding-bottom: clamp(74px, 10vw, 160px);
+   }
+
+   &__badge {
+      margin-bottom: 14px;
+   }
+
+   &__title {
+      margin-bottom: clamp(40px, 6vw, 80px);
+   }
+
+   &__cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 48px;
+
+      @include mobile {
+         grid-template-columns: 1fr;
+         gap: 24px;
+      }
+   }
+
+   &__card {
+      &-body {
+         background-color: var(--background-color-grey);
+         border-radius: 16px;
+         padding: 45px 16px 24px 16px;
+         display: flex;
+         flex-direction: column;
+         position: relative;
+         overflow: hidden;
+      }
+
+      &-image {
+         margin-inline: -16px;
+         position: relative;
+         left: 16px;
+         margin-bottom: 69px;
+      }
+      
+      &-info {
+         display: flex;
+         align-items: center;
+         justify-content: space-between;
+         margin-bottom: 4px;
+      }
+   
+      &-title {
+         font-family: 'Roboto', sans-serif;
+         font-weight: 400;
+         font-size: 20px;
+         color: var(--color-text-blue);
+         
+         @include lineHeight(28, 20);
+      }
+   
+      &-price {
+         font-family: 'Inter';
+         font-weight: 400;
+         font-size: 16px;
+         line-height: 1.5;
+         color: var(--color-text-grey);
+      }
+   
+      &-text {
+         font-family: 'Inter';
+         font-weight: 400;
+         color: var(--color-text-grey);
+         font-size: 13px;
+         margin-bottom: 24px;
+
+         @include lineHeight(21, 13);
+      }
+   
+      &-button {
+         display: block;
+         padding-block: 17px;
+         justify-content: center;
+         cursor: pointer;
+         transition: var(--transition);
+         background-color: var(--background-color-while);
+         width: 100%;
+         position: relative;
+         z-index: 10;
+
+         @include hover {
+            background-color: var(--background-color-lilac);
+         }
+      }
+
+      &-details {
+         div {
+            background-color: var(--background-color-lilac);
+            border-radius: 16px;
+            padding: 16px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            translate: 0% -100%;
+            transition: var(--transition);
+            max-height: 250px;
+            overflow: auto;
+         }
+      }
+
+      .active + div {
+         translate: 0%;
+      }
+
+      .active {
+         background-color: rgb(211, 205, 244);
+      }
+   }
+
+   &__card--news {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      grid-column: 1 / 4;
+
+      @include mobile {
+         grid-template-columns: 1fr;
+         grid-column: 1 / 2;
+      }
+   }
+
+   &__card-shop {
+      font-weight: 400;
+      text-align: center;
+      background-color: var(--background-color-grey);
+      border-radius: 16px;
+      justify-items: center;
+
+      div {
+         padding: 64px 48px;
+         justify-items: center;
+      }
+   }
+
+   &__shop-title {
+      font-family: 'Roboto', sans-serif;
+      font-size: 32px;
+      color: var(--color-text-blue);
+      margin-bottom: 27px;
+      
+      @include lineHeight(41.6, 32);
+   }
+
+   &__shop-text {
+      font-family: 'Inter', sans-serif;
+      font-size: 17px;
+      color: var(--color-text-grey);
+      margin-bottom: 37px;
+
+      @include lineHeight(27, 17);
+   }
+
+   &__shop-link {
+      padding: 9px 21px;
+      cursor: pointer;
+   }
+
+   &__shop-image {
+   }
+}
